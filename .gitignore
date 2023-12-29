@@ -1,0 +1,5 @@
+# .gitignore
+
+# Ignorar todos os diretórios venv
+**/venv/
+**/API/test.py
