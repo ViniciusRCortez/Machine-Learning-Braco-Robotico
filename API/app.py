@@ -9,11 +9,11 @@ import pandas as pd
 
 warnings.filterwarnings("ignore")
 
-with open(r"/home/vinicius/Documentos/Repositorios/Machine-Learning-Braco-Robotico/API/scaler.pkl", "rb") as arquivo:
+with open(r"scaler.pkl", "rb") as arquivo:
     # Carregar o objeto pickle do arquivo
     scaler = pickle.load(arquivo)
 
-modelo = load_model("/home/vinicius/Documentos/Repositorios/Machine-Learning-Braco-Robotico/API/modelo.h5")
+modelo = load_model("modelo.h5")
 
 colunas_entrada = ['Amplitude_degrau', 'RiseTime', 'SettlingTime', 'Overshoot']
 colunas_saida = ['Kp', 'Ti', 'Td', 'b', 'c', 'Tf']
